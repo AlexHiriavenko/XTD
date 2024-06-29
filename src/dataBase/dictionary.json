@@ -1,0 +1,14 @@
+{
+  "en": {
+    "translation": {
+      "welcome_message": "Welcome to our website!",
+      "description": "This is a simple example of i18next usage."
+    }
+  },
+  "ru": {
+    "translation": {
+      "welcome_message": "Добро пожаловать на наш сайт!",
+      "description": "Это простой пример использования i18next."
+    }
+  }
+}
