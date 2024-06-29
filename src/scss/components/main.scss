@@ -1,0 +1,24 @@
+main {
+  text-align: center;
+  padding-inline: 65px;
+  padding-bottom: 160px;
+}
+
+@include mid-screen() {
+  main {
+    text-align: center;
+    padding-inline: 32px;
+  }
+}
+
+@include tablet-screen() {
+  main {
+    padding-bottom: 90px;
+  }
+}
+
+@include mobile-screen() {
+  main {
+    padding-inline: 16px;
+  }
+}
