@@ -13,6 +13,7 @@ export const path = {
   dist: {
     images: `${distFolder}/img/`,
     dataBase: `${distFolder}/dataBase/`,
+    videos: `${distFolder}/videos/`,
     js: `${distFolder}/js/`,
     fonts: `${distFolder}/fonts/`,
     css: `${distFolder}/css/`,
@@ -24,6 +25,7 @@ export const path = {
     html: `${srcFolder}/*.html`,
     scss: `${srcFolder}/scss/styles.scss`,
     dataBase: `${srcFolder}/dataBase/**/*.*`,
+    videos: `${srcFolder}/videos/**/*.*`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
   },
   watch: {
@@ -32,6 +34,7 @@ export const path = {
     scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/**/*.html`,
     dataBase: `${srcFolder}/dataBase/**/*.*`,
+    videos: `${srcFolder}/videos/**/*.*`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
   },
   clean: distFolder,

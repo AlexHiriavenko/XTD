@@ -3,7 +3,9 @@ import openBurger from "./functions/openBurger.js";
 import closeBurger from "./functions/closeBurger.js";
 import navLinkClick from "./functions/navLinkClick.js";
 import documentClick from "./functions/documentClick.js";
-import { burgerBtn, burger } from "./variables/variables.js";
+import { burgerBtn, burger, btnLangGroup } from "./variables/variables.js";
+import onBtnLangClick from "./functions/onBtnLangClick.js";
+import setTransparent from "./functions/setTransparent.js";
 
 function setBurger(event) {
   const target = event.target.closest("button");
@@ -20,16 +22,11 @@ function setBurger(event) {
   }
 }
 
+// бургер меню
 burgerBtn.addEventListener("click", setBurger);
 
-///////////  test ////////////////
+// смена языка
+btnLangGroup.addEventListener("click", onBtnLangClick);
 
-import getData from "../utils/getData.js";
-import { dataBase } from "../databasePaths/databasePaths.js";
-
-async function getManagers() {
-  const testData = await getData(dataBase.MANAGERS_PATH);
-  console.log(testData);
-}
-
-getManagers();
+// прозрачный хедер
+window.addEventListener("scroll", setTransparent);

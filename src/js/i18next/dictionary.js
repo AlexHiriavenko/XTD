@@ -5,6 +5,12 @@ export let dictionary = {
   ru: {
     translation: {},
   },
+  uk: {
+    translation: {},
+  },
+  zh: {
+    translation: {},
+  },
 };
 
 export function setDictionary(data) {

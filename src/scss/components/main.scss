@@ -1,13 +1,11 @@
 main {
   text-align: center;
-  padding-inline: 65px;
   padding-bottom: 160px;
 }
 
 @include mid-screen() {
   main {
     text-align: center;
-    padding-inline: 32px;
   }
 }
 
@@ -18,7 +16,10 @@ main {
 }
 
 @include mobile-screen() {
-  main {
-    padding-inline: 16px;
-  }
 }
+
+@import "SectionsCommon";
+@import "CompanyName";
+@import "AboutCompany";
+@import "CarBrands";
+@import "Team";

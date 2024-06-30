@@ -1,0 +1,31 @@
+.general__section {
+  padding-inline: 36px;
+}
+
+.company-name__section {
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 400px;
+  background-image: url("@img/CompanyName/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.company-name__title {
+  margin-top: 24px;
+  font-size: 42px;
+  font-weight: 700;
+  color: $accent-color-secondary;
+  text-shadow: 1px 1px 1px black;
+  line-height: 1.2;
+}
+
+.company-name__title2 {
+  display: block;
+}
+
+.company-name__subtitle {
+  display: block;
+  padding-block: 24px;
+}

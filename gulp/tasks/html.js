@@ -10,19 +10,26 @@ import versionNumber from "gulp-version-number";
 // транпортирует из src в корень проекта (см path.js -> объект path)
 // обновляет браузер при изменениях в исходниках html
 export const html = () => {
-    return app.gulp.src(app.path.src.html)
-    .pipe(app.plugins.plumber(app.plugins.notify.onError())) 
-     .pipe(fileinclude())
-     .pipe(app.plugins.replace(/@img\//g, './dist/img/'))
-     .pipe(app.plugins.if(app.isProduct,
-          versionNumber({
-          'value': '%DT%',
-          'append': {
-            'key': '_v',
-            'cover': 0,
-            'to': ['css','js',]},
-          'output': { 'file': 'gulp/version.json'}
-          })))
-     .pipe(app.gulp.dest(app.path.dist.html))
-     .pipe(app.plugins.browsersync.stream())
-}
+  return app.gulp
+    .src(app.path.src.html)
+    .pipe(app.plugins.plumber(app.plugins.notify.onError()))
+    .pipe(fileinclude())
+    .pipe(app.plugins.replace(/@img\//g, "./dist/img/"))
+    .pipe(app.plugins.replace(/@video\//g, "./dist/videos/"))
+    .pipe(
+      app.plugins.if(
+        app.isProduct,
+        versionNumber({
+          value: "%DT%",
+          append: {
+            key: "_v",
+            cover: 0,
+            to: ["css", "js"],
+          },
+          output: { file: "gulp/version.json" },
+        })
+      )
+    )
+    .pipe(app.gulp.dest(app.path.dist.html))
+    .pipe(app.plugins.browsersync.stream());
+};

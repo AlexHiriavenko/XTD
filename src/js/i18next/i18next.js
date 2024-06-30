@@ -4,6 +4,7 @@ import { dataBase } from "../databasePaths/databasePaths.js";
 import updateContent from "./updateContent.js";
 import getUserLang from "./getUserLang.js";
 import changeLanguage from "./changeLanguage.js";
+import setActiveBtnLang from "../header/functions/setActiveBtnLang.js";
 import { dictionary, setDictionary } from "./dictionary.js";
 
 // Получаем язык пользователя
@@ -20,7 +21,8 @@ async function i18nextInit() {
     },
     function (err, t) {
       // Функция, выполняемая после инициализации
-      updateContent(userLang, dictionary); // Передаем язык пользователя для обновления содержимого
+      updateContent(userLang); // Передаем язык пользователя для обновления содержимого
+      setActiveBtnLang(userLang); // красим кнопку с нужным языком
     }
   );
 }

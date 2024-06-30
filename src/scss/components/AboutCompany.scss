@@ -1,0 +1,32 @@
+.about-company__container {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  column-gap: 16px;
+}
+
+.container-video__about-company {
+  flex: 1;
+}
+
+.container-video__about-company video {
+  flex: 1;
+}
+
+.video__about-company {
+  width: 240px;
+  min-width: 50%;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+  object-fit: scale-down;
+}
+
+.about-company__text {
+  flex: 1;
+  line-height: 1.7;
+  font-size: 20px;
+  text-align: start;
+}
