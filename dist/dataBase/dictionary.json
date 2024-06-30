@@ -1,0 +1,46 @@
+{
+  "en": {
+    "translation": {
+      "link_about": "About",
+      "link_contacts": "Contacts",
+      "link_product": "Product",
+      "about_company": "XTD Co. is a car export company. We are engaged in the supply of high-quality Chinese electric cars to Central Asian and Eastern European countries. As a reliable car exporter, we have established close partnerships with many Chinese car companies. We provide our customers with original spare parts and components. We also have service and upgrade options for cars.",
+      "brands_title": "Car Brands",
+      "about_title": "About Us",
+      "team_title": "Our Team"
+    }
+  },
+  "ru": {
+    "translation": {
+      "link_about": "Про Нас",
+      "link_contacts": "Контакты",
+      "link_product": "Ассортимент",
+      "about_company": "XTD Co. — компания по экспорту автомобилей. Мы занимаемся поставками высококачественных китайских электрокаров в страны Центральной Азии и Восточной Европы. Как надежный экспортер автомобилей, мы установили тесные партнерские отношения со многими китайскими автомобильными компаниями. Мы обеспечиваем наших клиентов оригинальными запчастями и комплектующими. У нас также есть сервисное обслуживание и возможность апгрейда автомобилей.",
+      "brands_title": "Марки Автомобилей",
+      "about_title": "Про Нас",
+      "team_title": "Наша Команда"
+    }
+  },
+  "uk": {
+    "translation": {
+      "link_about": "Про Нас",
+      "link_contacts": "Контакти",
+      "link_product": "Асортимент",
+      "about_company": "XTD Co. — компанія з експорту автомобілів. Ми займаємося поставками високоякісних китайських електрокарів в країни Центральної Азії та Східної Європи. Як надійний експортер автомобілів, ми встановили тісні партнерські відносини з багатьма китайськими автомобільними компаніями. Ми забезпечуємо наших клієнтів оригінальними запчастинами та комплектуючими. У нас також є сервісне обслуговування та можливість апгрейду автомобілів.",
+      "brands_title": "Марки Автомобілів",
+      "about_title": "Про Нас",
+      "team_title": "Наша Команда"
+    }
+  },
+  "zh": {
+    "translation": {
+      "link_about": "关于我们",
+      "link_contacts": "联系方式",
+      "link_product": "产品",
+      "about_company": "XTD 公司是一家汽车出口公司。我们致力于向中亚和东欧国家供应高质量的中国电动汽车。作为可靠的汽车出口商，我们与许多中国汽车公司建立了密切的合作关系。我们为客户提供原厂零部件和组件。我们还提供汽车的服务和升级选项。",
+      "brands_title": "汽车品牌",
+      "about_title": "关于我们",
+      "team_title": "我们的团队"
+    }
+  }
+}
