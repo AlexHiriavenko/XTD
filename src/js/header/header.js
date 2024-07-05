@@ -23,7 +23,7 @@ function setBurger(event) {
 }
 
 // бургер меню
-burgerBtn.addEventListener("click", setBurger);
+// burgerBtn.addEventListener("click", setBurger);
 
 // смена языка
 btnLangGroup.addEventListener("click", onBtnLangClick);

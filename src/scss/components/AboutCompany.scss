@@ -17,7 +17,8 @@
 .container-img__about-company {
   flex: 0 0 calc(45% - 12px);
   img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 412px;
   }
 }
 
@@ -33,7 +34,7 @@
 
 .about-company__text {
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 18px;
   text-align: start;
   &:not(:first-of-type) {
     margin-top: 16px;
@@ -43,7 +44,7 @@
 ul.about-company__text {
   list-style-type: disc;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @include mid-screen() {
@@ -51,6 +52,12 @@ ul.about-company__text {
     flex-direction: column;
     row-gap: 46px;
     align-items: center;
+    .container-img__about-company {
+      img {
+        width: 80%;
+        max-width: 412px;
+      }
+    }
   }
 
   .about-company__text {

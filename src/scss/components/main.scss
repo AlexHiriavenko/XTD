@@ -1,6 +1,6 @@
 main {
   text-align: center;
-  padding-bottom: 160px;
+  padding-bottom: 120px;
 }
 
 @include mid-screen() {
@@ -11,11 +11,14 @@ main {
 
 @include tablet-screen() {
   main {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 }
 
 @include mobile-screen() {
+  main {
+    padding-bottom: 40px;
+  }
 }
 
 @import "SectionsCommon";

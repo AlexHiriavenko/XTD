@@ -40,27 +40,27 @@ const swiper = new Swiper("#craouselContainer", {
   // slidesPerView: 2.3,
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 40,
+  spaceBetween: 30,
   effect: "coverflow",
   coverflowEffect: {
     rotate: 0,
-    depth: 800,
-    slideShadows: true,
+    depth: 1100,
+    slideShadows: false,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   // autoplay: { delay: 3000 },
-  autoplay: false,
+  // autoplay: false,
 });
 window.onresize = queryResizer;
 queryResizer();
 function queryResizer() {
-  if (window.innerWidth < 724) swiper.params.slidesPerView = 1.2;
-  if (window.innerWidth > 501) swiper.params.slidesPerView = 1.2;
-  if (window.innerWidth > 724) swiper.params.slidesPerView = 1.6;
-  if (window.innerWidth < 480) swiper.params.slidesPerView = 1;
+  if (window.innerWidth < 768) swiper.params.slidesPerView = 1.2;
+  if (window.innerWidth > 501) swiper.params.slidesPerView = 1.5;
+  if (window.innerWidth > 768) swiper.params.slidesPerView = 1.5;
+  if (window.innerWidth < 481) swiper.params.slidesPerView = 0.96;
   swiper.update();
 }
 

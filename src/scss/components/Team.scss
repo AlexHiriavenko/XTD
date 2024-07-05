@@ -17,13 +17,14 @@
   height: fit-content;
   display: flex;
   height: auto;
-  border-radius: 5px;
+  border-radius: 9px;
+  border: 1px solid rgba(64, 64, 64, 0.8);
   overflow: hidden;
   align-items: flex-start;
   flex-direction: column;
   padding: 0px;
   font-family: Nunito;
-  background-color: white;
+  background-color: $bg-color-secondary;
 }
 
 .swiper-slide .ImgHolder {
@@ -51,7 +52,7 @@
 .ContentHolder {
   position: relative;
   padding: 10px;
-  background-color: white;
+  background-color: $bg-color-secondary;
   border-top-right-radius: 20px;
   color: black;
   width: 100%;
@@ -60,11 +61,11 @@
 .swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
-  border: 1px solid $accent-color;
+  border: 1px solid white;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: $accent-color;
+  background-color: $accent-color-secondary-alpha;
 }
 
 .swiper-button {
@@ -72,27 +73,27 @@
 }
 
 .swiper-slide img {
-  width: 240px;
+  width: 200px;
   border-radius: 12px;
   margin: auto;
   object-fit: cover;
-  border: 3px solid $accent-color;
+  border: 3px solid $accent-color-secondary-alpha;
   outline: 2px solid white;
 }
 
 .swiper-slide h3 {
-  margin-top: 12px;
+  margin-top: 8px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
 }
 
 .swiper-slide p {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 5px;
 }
 
@@ -104,13 +105,13 @@
 
 @media (max-width: 500px) {
   .swiper-container {
-    width: 90vw;
+    width: 86vw;
   }
 }
 
 @media (max-width: 300px) {
   .swiper-container {
-    width: 100%;
+    width: 94%;
   }
 
   .swiper-slide {
