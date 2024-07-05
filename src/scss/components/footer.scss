@@ -177,3 +177,10 @@
     height: auto;
   }
 }
+
+@include extra-small-screen() {
+  .footer__rss .footer__company-name {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}

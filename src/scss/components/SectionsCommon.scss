@@ -1,7 +1,8 @@
 .section-title {
+  font-size: 42px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: $accent-color-secondary;
-  font-size: 42px;
+
   font-weight: 700;
   text-shadow: 1px 1px 2px black, 0 0 0.6em white, 0 0 0.2em white;
 }
@@ -9,4 +10,13 @@
 .common-section {
   padding-block: 80px;
   scroll-margin-top: 80px;
+}
+
+@include mobile-screen() {
+  .section-title {
+    font-size: 36px;
+  }
+  .common-section {
+    padding-inline: 12px;
+  }
 }
