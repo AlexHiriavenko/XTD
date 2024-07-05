@@ -10,6 +10,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .nav__list {
@@ -92,7 +93,7 @@ header .btn-group {
 
 .btn-lang-group {
   @include center-flex;
-  column-gap: 8px;
+  column-gap: 16px;
 }
 
 .btn-lang.pressed {
@@ -119,7 +120,8 @@ header .btn-group {
 
 @include mid-screen() {
   .btn-burger {
-    display: flex;
+    // display: flex;
+    display: none;
     width: 36px;
     height: 36px;
     margin-top: 2px;
@@ -192,7 +194,11 @@ header .btn-group {
   }
 
   .logo-img {
-    width: 110px;
+    width: 90px;
     height: auto;
+  }
+
+  .btn-lang-group {
+    column-gap: 8px;
   }
 }

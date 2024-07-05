@@ -27,7 +27,8 @@
 }
 
 .swiper-slide .ImgHolder {
-  background-color: $accent-color;
+  // background-color: $accent-color-secondary;
+  background-color: $accent-color-secondary-alpha;
   display: flex;
   width: 100%;
   height: auto;
@@ -36,12 +37,13 @@
 }
 
 .ContentHolder::before {
-  background-color: $accent-color;
+  // background-color: $accent-color-secondary;
+  background-color: $accent-color-secondary-alpha;
   content: "";
   width: 50px;
   height: 50px;
   position: absolute;
-  top: -5px;
+  top: 0px;
   z-index: -1;
   right: 0px;
 }
@@ -52,6 +54,7 @@
   background-color: white;
   border-top-right-radius: 20px;
   color: black;
+  width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -69,9 +72,8 @@
 }
 
 .swiper-slide img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 240px;
+  border-radius: 12px;
   margin: auto;
   object-fit: cover;
   border: 3px solid $accent-color;
@@ -79,27 +81,30 @@
 }
 
 .swiper-slide h3 {
+  margin-top: 12px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   text-align: center;
   font-weight: bold;
 }
 
 .swiper-slide p {
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 5px;
 }
 
 @media (max-width: 638px) {
   .swiper-container {
-    width: 100%;
+    width: 90vw;
   }
 }
 
 @media (max-width: 500px) {
   .swiper-container {
-    width: 70vw;
+    width: 90vw;
   }
 }
 

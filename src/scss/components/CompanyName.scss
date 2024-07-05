@@ -6,6 +6,7 @@
   margin-top: 80px;
   padding-top: 50px;
   padding-bottom: 400px;
+  background-color: $bg-color-secondary;
   background-image: url("@img/CompanyName/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,4 +29,32 @@
 .company-name__subtitle {
   display: block;
   padding-block: 24px;
+}
+
+.main-company-logo {
+  max-width: 76%;
+}
+
+@include mid-screen() {
+  .company-name__title {
+    font-size: calc((100vw - 768px) / 332 * 6 + 34px);
+  }
+}
+
+@include mobile-screen() {
+  .company-name__section {
+    padding-bottom: 320px;
+  }
+
+  .general__section {
+    padding-inline: 12px;
+  }
+
+  .company-name__title {
+    font-size: 22px;
+  }
+
+  .company-name__subtitle {
+    font-size: 21px;
+  }
 }
