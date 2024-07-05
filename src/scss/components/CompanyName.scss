@@ -36,6 +36,9 @@
 }
 
 @include mid-screen() {
+  .company-name__section {
+    margin-top: 100px;
+  }
   .company-name__title {
     font-size: calc((100vw - 768px) / 332 * 6 + 34px);
   }
