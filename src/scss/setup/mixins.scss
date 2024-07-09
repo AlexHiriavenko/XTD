@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+@mixin large-screen() {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
 @mixin mid-screen() {
   @media (max-width: 1100px) {
     @content;
@@ -29,7 +35,7 @@
 }
 
 @mixin extra-small-screen() {
-  @media (max-width: 360px) {
+  @media (max-width: 359px) {
     @content;
   }
 }

@@ -2,37 +2,47 @@ var testiomnialData = [
   {
     avatar: "./dist/img/Team/Van-Chen.jpg",
     name: "Van Chen",
-    review: "Auto Expert",
+    position: "Auto Expert",
   },
   {
-    avatar: "./dist/img/Team/Anya.jpg",
-    name: "Anna",
-    review: "SMM Manager",
+    avatar: "./dist/img/Team/Nikolay.jpg",
+    name: "Nikolay",
+    position: "Logistician",
   },
   {
     avatar: "./dist/img/Team/Lilya.jpg",
     name: "Liliia",
-    review: "Sales Manager",
+    position: "Regional Manager",
+  },
+  {
+    avatar: "./dist/img/Team/Anya.jpg",
+    name: "Anna",
+    position: "SMM Manager",
   },
   {
     avatar: "./dist/img/Team/Van-Chen.jpg",
     name: "Van Chen",
-    review: "Auto Expert",
+    position: "Auto Expert",
   },
   {
-    avatar: "./dist/img/Team/Anya.jpg",
-    name: "Anna",
-    review: "SMM Manager",
+    avatar: "./dist/img/Team/Nikolay.jpg",
+    name: "Nikolay",
+    position: "Logistician",
   },
   {
     avatar: "./dist/img/Team/Lilya.jpg",
     name: "Liliia",
-    review: "Sales Manager",
+    position: "Regional Manager",
+  },
+  {
+    avatar: "./dist/img/Team/Anya.jpg",
+    name: "Anna",
+    position: "SMM Manager",
   },
 ];
 var slideHolder = document.querySelector("#slideHolder");
 for (let i of testiomnialData)
-  slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`;
+  slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.position}</p></div></div>`;
 
 const swiper = new Swiper("#craouselContainer", {
   grabCursor: true,
