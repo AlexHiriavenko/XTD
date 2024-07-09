@@ -1,4 +1,4 @@
-var testiomnialData = [
+var teamData = [
   {
     avatar: "./dist/img/Team/Van-Chen.jpg",
     name: "Van Chen",
@@ -41,8 +41,18 @@ var testiomnialData = [
   },
 ];
 var slideHolder = document.querySelector("#slideHolder");
-for (let i of testiomnialData)
-  slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.position}</p></div></div>`;
+for (let i of teamData)
+  slideHolder.innerHTML += `<div class="swiper-slide"> 
+    <div class="ImgHolder"><img src="${i.avatar}" alt="${i.name}"></div>
+    <div class="ContentHolder">
+      <h3 data-i18n="name_${i.name.replace(/ /g, "_").toLowerCase()}">${
+    i.name
+  }</h3>
+      <p data-i18n="position_${i.position.replace(/ /g, "_").toLowerCase()}">${
+    i.position
+  }</p>
+    </div>
+  </div>`;
 
 const swiper = new Swiper("#craouselContainer", {
   grabCursor: true,

@@ -98,13 +98,13 @@
   padding: 5px;
 }
 
-@media (max-width: 638px) {
+@include mid-screen() {
   .swiper-container {
     width: 90vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .swiper-container {
     width: 86vw;
   }
