@@ -10,10 +10,7 @@ function setVideoPath(lang) {
   } else {
     videoSource.src = "./dist/videos/preview-eng.mp4";
   }
-
-  video.controls = false;
   video.load();
-  video.oncanplay = () => (video.controls = true);
 }
 
 export default setVideoPath;
