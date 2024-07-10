@@ -4,13 +4,18 @@
 
 .company-name__section {
   margin-top: 80px;
-  padding-top: 50px;
-  padding-bottom: 400px;
+  padding-inline: 0;
   background-color: $bg-color-secondary;
-  background-image: url("@img/CompanyName/bg2.jpg");
+  background-image: url("@img/CompanyName/company-name-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center 0%;
+}
+
+.company-name__section .test {
+  padding-top: 80px;
+  padding-bottom: 400px;
+  background-color: rgba($color: #000000, $alpha: 0.3);
 }
 
 .company-name__title {
