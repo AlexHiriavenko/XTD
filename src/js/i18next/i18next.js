@@ -6,6 +6,7 @@ import getUserLang from "./getUserLang.js";
 import changeLanguage from "./changeLanguage.js";
 import setActiveBtnLang from "../header/functions/setActiveBtnLang.js";
 import { dictionary, setDictionary } from "./dictionary.js";
+import setVideoPath from "../aboutCompany.js/setVideoPath.js";
 
 // Получаем язык пользователя
 const userLang = getUserLang();
@@ -23,6 +24,7 @@ async function i18nextInit() {
       // Функция, выполняемая после инициализации
       updateContent(userLang); // Передаем язык пользователя для обновления содержимого
       setActiveBtnLang(userLang); // красим кнопку с нужным языком
+      setVideoPath(userLang);
     }
   );
 }
