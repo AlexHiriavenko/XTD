@@ -15,9 +15,11 @@
       "name_anna": "Anna",
       "name_liliia": "Liliia",
       "name_nikolay": "Nikolay",
+      "name_li_jinyan": "LI JINYAN",
       "position_auto_expert": "Auto Expert",
       "position_smm_manager": "SMM Manager",
-      "position_regional_manager": "Region Manager",
+      "position_regional_manager": "Regional Manager",
+      "position_chief_regional_manager": "Chief Regional Manager",
       "position_logistician": "Logistician"
     }
   },
@@ -37,9 +39,11 @@
       "name_anna": "Анна",
       "name_liliia": "Лилия",
       "name_nikolay": "Николай",
+      "name_li_jinyan": "Ли Цзиньен",
       "position_auto_expert": "Автоэксперт",
       "position_smm_manager": "SMM-менеджер",
       "position_regional_manager": "Региональный Менеджер",
+      "position_chief_regional_manager": "Главный региональный менеджер",
       "position_logistician": "Логист"
     }
   },
@@ -59,9 +63,11 @@
       "name_anna": "Анна",
       "name_liliia": "Лілія",
       "name_nikolay": "Миколай",
+      "name_li_jinyan": "Лі Цзіньєн",
       "position_auto_expert": "Автоексперт",
       "position_smm_manager": "SMM-менеджер",
       "position_regional_manager": "Регіональний Менеджер",
+      "position_chief_regional_manager": "Головний регіональний менеджер",
       "position_logistician": "Логіст"
     }
   },
@@ -81,9 +87,11 @@
       "name_anna": "安娜",
       "name_liliia": "莉莉亚",
       "name_nikolay": "尼古拉",
+      "name_li_jinyan": "李金彦",
       "position_auto_expert": "汽车专家",
       "position_smm_manager": "SMM经理",
       "position_regional_manager": "区域经理",
+      "position_chief_regional_manager": "首席区域经理",
       "position_logistician": "后勤"
     }
   }

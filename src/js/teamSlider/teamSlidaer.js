@@ -10,24 +10,9 @@ var teamData = [
     position: "Logistician",
   },
   {
-    avatar: "./dist/img/Team/Lilya.jpg",
-    name: "Liliia",
-    position: "Regional Manager",
-  },
-  {
-    avatar: "./dist/img/Team/Anya.jpg",
-    name: "Anna",
-    position: "SMM Manager",
-  },
-  {
-    avatar: "./dist/img/Team/Van-Chen.jpg",
-    name: "Van Chen",
-    position: "Auto Expert",
-  },
-  {
-    avatar: "./dist/img/Team/Nikolay.jpg",
-    name: "Nikolay",
-    position: "Logistician",
+    avatar: "./dist/img/Team/Li-Jinyan.jpg",
+    name: "LI JINYAN",
+    position: "Chief Regional Manager",
   },
   {
     avatar: "./dist/img/Team/Lilya.jpg",
