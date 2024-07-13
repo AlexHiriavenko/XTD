@@ -9,6 +9,7 @@
 
 .car-brands__logos {
   margin-top: 60px;
+  margin-inline: auto;
   padding-bottom: 26px;
   display: flex;
   justify-content: center;
@@ -31,12 +32,28 @@
   }
 }
 
+@include mid-screen() {
+  .car-brands__logos {
+    max-width: 530px;
+  }
+}
+
 @include mobile-screen() {
+  .car-brands__logos {
+    max-width: 440px;
+  }
+
   .car-brands__logos img {
     width: 56px;
   }
 
   .car-brands__logos figcaption {
     font-size: 16px;
+  }
+}
+
+@include extra-small-screen() {
+  .car-brands__logos {
+    max-width: 300px;
   }
 }
