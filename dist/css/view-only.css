@@ -351,7 +351,8 @@ main {
 
 .company-name__section .test {
   background-color: rgba(0, 0, 0, 0.2);
-  min-height: 700px;
+  height: calc(100vh - 80px);
+  max-height: 840px;
   padding-inline: 36px;
 }
 
@@ -362,7 +363,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0%;
-  height: 700px;
+  height: calc(100vh - 80px);
+  max-height: 840px;
 }
 
 .main-company-logo {
@@ -393,18 +395,24 @@ main {
 }
 
 .about-company__container {
-  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
+  row-gap: 80px;
+  width: 100%;
 }
 
 .about-company__text-container {
@@ -414,26 +422,15 @@ main {
 }
 
 .container-video__about-company {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 12px);
-          flex: 0 0 calc(50% - 12px);
-}
-
-.container-img__about-company {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 12px);
-          flex: 0 0 calc(50% - 12px);
-}
-
-.container-img__about-company img {
-  width: 100%;
-  max-width: 412px;
+  width: 80%;
+  max-width: 900px;
 }
 
 .video__about-company {
-  width: 440px;
-  height: 248px;
-  min-height: 248px;
+  width: 900px;
+  max-width: 100%;
+  height: auto;
+  min-width: 80%;
   display: block;
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -442,13 +439,9 @@ main {
 }
 
 .about-company__text {
-  line-height: 1.5;
+  line-height: 1.2;
   font-size: 18px;
   text-align: start;
-}
-
-.about-company__text:not(:first-of-type) {
-  margin-top: 16px;
 }
 
 ul.about-company__text {
@@ -867,6 +860,10 @@ ul.about-company__text {
     padding-bottom: 80px;
   }
 
+  .container-video__about-company {
+    width: 90%;
+  }
+
   .about-company__text {
     font-size: 18px;
   }
@@ -1010,6 +1007,10 @@ ul.about-company__text {
     font-size: 21px;
   }
 
+  .container-video__about-company {
+    width: 100%;
+  }
+
   .about-company__text {
     font-size: 16px;
     line-height: 1.5;
@@ -1017,12 +1018,6 @@ ul.about-company__text {
 
   ul.about-company__text {
     font-size: 14px;
-  }
-
-  .video__about-company {
-    width: 300px;
-    height: 170px;
-    min-height: 170px;
   }
 
   .car-brands__logos img {
