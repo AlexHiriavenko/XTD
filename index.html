@@ -40,10 +40,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap&_v=20240716165211"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap&_v=20240718142938"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240716165211">
-  <link rel="stylesheet" href="./dist/css/styles.min.css?_v=20240716165211" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240718142938">
+  <link rel="stylesheet" href="./dist/css/styles.min.css?_v=20240718142938" />
 </head>
 
 <body>
@@ -63,11 +63,11 @@
           >About</a
         ></li
       >
-      <li class="nav__list-item"
+      <!-- <li class="nav__list-item"
         ><a class="nav__link" href="#car-brands-section" data-i18n="link_brands"
           >Car Brands</a
         ></li
-      >
+      > -->
       <li class="nav__list-item"
         ><a class="nav__link" href="#team-section" data-i18n="link_team"
           >Our Team</a
@@ -122,48 +122,7 @@
     </div>
   </div>
 </section>
-  <section
-  id="car-brands-section"
-  class="general__section car-brands__section common-section">
-  <h2 class="car-brands__title section-title" data-i18n="brands_title"
-    >Car Brands</h2
-  >
-  <div class="car-brands__logos">
-    <figure>
-      <img src="./dist/img/CarBrands/Tank.webp" alt="car brand logo" />
-      <figcaption>Tank</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/Volkswagen-logo.webp" alt="car brand logo" />
-      <figcaption>Volkswagen</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/byd-logo.png" alt="car brand logo" />
-      <figcaption>BYD</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/changan.webp" alt="car brand logo" />
-      <figcaption>Changan</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/xiaopeng.webp" alt="car brand logo" />
-      <figcaption>XPeng</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/zeekr-logo.webp" alt="car brand logo" />
-      <figcaption>Zeekr</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/lixiang-logo-1.webp" alt="car brand logo" />
-      <figcaption>Lixiang</figcaption>
-    </figure>
-    <figure>
-      <img src="./dist/img/CarBrands/bmw-logo.png" alt="car brand logo" />
-      <figcaption>BMW</figcaption>
-    </figure>
-  </div>
-</section>
-
+  
   <section id="team-section" class="team__section common-section">
   <h2 class="section-title" data-i18n="team_title">Our Team</h2>
   <div id="craouselContainer" class="swiper-container">
@@ -176,59 +135,102 @@
 
 </main>
     <footer id="footer" class="footer">
+  <h3 class="contacts-title">
+    <span data-i18n="link_contacts">Contacts</span>
+  </h3>
   <div class="contacts-container">
-    <div>
-      <h3 class="contacts-title">
-        <span data-i18n="link_contacts">Contacts</span>
-      </h3>
       <ul class="contacts__list sidebar__list">
-        <li>
-          <a href="tel:+86 133 8808 6600" class="contacts__link">
-            <img src="./dist/img/Footer/phone.svg" alt="phone icon" width="20" />
+  <li>
+    <a href="tel:+86 133 8808 6600" class="contacts__link">
+      <img src="./dist/img/Footer/phone.svg" alt="phone icon" width="28" />
 
-            <span>+86 133 8808 6600</span>
-          </a>
-        </li>
+      <span>+86 133 8808 6600</span>
+    </a>
+  </li>
 
-        <li>
-          <a href="mailto:xtd-cn@gmail.com" class="contacts__link">
-            <img src="./dist/img/Footer/email.svg" alt="mail icon" width="22" />
+  <li>
+    <a href="mailto:xtd-cn@gmail.com" class="contacts__link">
+      <img src="./dist/img/Footer/email.svg" alt="mail icon" width="28" />
 
-            <span> xtd-cn@<span>gmail.com</span> </span>
-          </a>
-        </li>
+      <span> xtd-cn@<span>gmail.com</span> </span>
+    </a>
+  </li>
 
-        <li>
-          <a href="https://wa.me/8613388086600" class="contacts__link" target="_blank">
-            <img src="./dist/img/Footer/WhatsApp.svg" alt="WhatsApp" width="22" />
-            <span>WhatsApp</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.google.com.ua/maps/search/406,+Tianbao+Huichuan+Building,+Second+Street,+Binhai+New+Area,+Tianjin,+China/@39.0933407,117.1485425,13.5z?hl=ru&entry=ttu"
-            class="contacts__link" target="_blank">
-            <img src="./dist/img/Footer/location.svg" alt="location" width="22" />
-            <span>Location</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-photo">
-      <img src="./dist/img/About/office-640.jpg" alt="office" width="300" />
-    </div>
+  <li>
+    <a
+      href="https://www.google.com.ua/maps/search/406,+Tianbao+Huichuan+Building,+Second+Street,+Binhai+New+Area,+Tianjin,+China/@39.0933407,117.1485425,13.5z?hl=ru&entry=ttu"
+      class="contacts__link"
+      target="_blank">
+      <img src="./dist/img/Footer/location.svg" alt="location" width="28" />
+      <span>Location</span>
+    </a>
+  </li>
+</ul>
+      <ul class="contacts__list sidebar__list">
+  <li class="messenger-links">
+    <a
+      href="https://wa.me/8613388086600"
+      class="contacts__link messenger-link"
+      target="_blank">
+      <img src="./dist/img/Footer/WhatsApp.svg" alt="WhatsApp" width="48" />
+      <span>WhatsApp</span>
+    </a>
+    <a
+      href="https://t.me/XTDChina"
+      class="contacts__link messenger-link"
+      target="_blank">
+      <img src="./dist/img/Footer/telegram.svg" alt="Telegram" width="42" />
+      <span>Telegram</span>
+    </a>
+  </li>
+  <li class="messenger-links">
+    <a
+      href="viber://chat?number=%2B8613388086600"
+      class="contacts__link messenger-link"
+      target="_blank">
+      <img src="./dist/img/Footer/viber.svg" alt="Viber" width="38" />
+      <span>Viber</span>
+    </a>
+    <a
+      href=""
+      class="contacts__link messenger-link weechat">
+      <img src="./dist/img/Footer/WeChat.svg" alt="WeChat" width="46" />
+      <span>WeChat</span>
+    </a>
+  </li>
+</ul>
+      <div class="social-chenels">
+  <p class="chenel-title">Наш Telegram канал:</p>
+  <a
+    href="https://wa.me/8613388086600"
+    class="contacts__link chenel"
+    target="_blank">
+    <img src="./dist/img/Footer/telegram.svg" alt="WhatsApp" width="40" />
+    <span>XTD.China</span>
+  </a>
+</div>
   </div>
   <hr class="divider" />
-  <ul class="footer__rss">
+    <ul class="footer__rss">
     <li>
-      <a class="footer__company-name"
+      <a
+        class="footer__company-name"
         href="https://www.google.com.ua/maps/search/406,+Tianbao+Huichuan+Building,+Second+Street,+Binhai+New+Area,+Tianjin,+China/@39.0933407,117.1485425,13.5z?hl=ru&entry=ttu"
-        title="XTD" target="_blank">TIANJIN XINTONGDA NEW ENERGY AUTOMOBILE CO., LTD</a>
+        title="XTD"
+        target="_blank"
+        >TIANJIN XINTONGDA NEW ENERGY AUTOMOBILE CO., LTD</a
+      >
     </li>
   </ul>
 </footer>
+
+    <dialog id="animatedModal">
+  <img src="./dist/img/Modal/qr-code.jpg" alt="qr-code">
+  <button id="closeAnimatedModal">Закрыть</button>
+</dialog>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20240716165211"></script>
-  <script type="module" src="./dist/js/app.min.js?_v=20240716165211"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20240718142938"></script>
+  <script type="module" src="./dist/js/app.min.js?_v=20240718142938"></script>
 </body>
 
 </html>
