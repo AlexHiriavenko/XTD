@@ -1,94 +1,12 @@
 <footer id="footer" class="footer">
+  <h3 class="contacts-title">
+    <span data-i18n="link_contacts">Contacts</span>
+  </h3>
   <div class="contacts-container">
-    <div>
-      <h3 class="contacts-title">
-        <span data-i18n="link_contacts">Contacts</span>
-      </h3>
-      <ul class="contacts__list sidebar__list">
-        <li>
-          <a href="tel:+86 133 8808 6600" class="contacts__link">
-            <img src="@img/Footer/phone.svg" alt="phone icon" width="20" />
-
-            <span>+86 133 8808 6600</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:xtd-cn@gmail.com" class="contacts__link">
-            <img src="@img/Footer/email.svg" alt="mail icon" width="22" />
-
-            <span> xtd-cn@<span>gmail.com</span> </span>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.google.com.ua/maps/search/406,+Tianbao+Huichuan+Building,+Second+Street,+Binhai+New+Area,+Tianjin,+China/@39.0933407,117.1485425,13.5z?hl=ru&entry=ttu"
-            class="contacts__link"
-            target="_blank">
-            <img src="@img/Footer/location.svg" alt="location" width="22" />
-            <span>Location</span>
-          </a>
-        </li>
-
-        <li class="messenger-links">
-          <a
-            href="https://wa.me/8613388086600"
-            class="contacts__link messenger-link"
-            target="_blank">
-            <img src="@img/Footer/WhatsApp.svg" alt="WhatsApp" width="22" />
-            <span>WhatsApp</span>
-          </a>
-          <a
-            href="https://t.me/XTDChina"
-            class="contacts__link messenger-link"
-            target="_blank">
-            <img src="@img/Footer/telegram.svg" alt="Telegram" width="22" />
-            <span>Telegram</span>
-          </a>
-        </li>
-        <li class="messenger-links">
-          <a
-            href="viber://chat?number=%2B8613388086600"
-            class="contacts__link messenger-link"
-            target="_blank">
-            <img src="@img/Footer/viber.svg" alt="Viber" width="22" />
-            <span>Viber</span>
-          </a>
-          <a
-            href="weixin://dl/chat?8613388086600"
-            class="contacts__link messenger-link"
-            target="_blank">
-            <img src="@img/Footer/WeChat.svg" alt="WeChat" width="24" />
-            <span>WeChat</span>
-          </a>
-        </li>
-      </ul>
-      <p class="social-chenels chenel-title">Наш Telegram канал:</p>
-      <div class="social-chenels">
-        <a
-          href="https://wa.me/8613388086600"
-          class="contacts__link messenger-link"
-          target="_blank">
-          <img src="@img/Footer/telegram.svg" alt="WhatsApp" width="22" />
-          <span>XTD.China</span>
-        </a>
-      </div>
-    </div>
-    <div class="footer-photo">
-      <img src="@img/About/office-640.jpg" alt="office" width="300" />
-    </div>
+      @@include('./Footer/FooterContacts.html', {})
+      @@include('./Footer/FooterMessengers.html', {})
+      @@include('./Footer/FooterSocialChenels.html', {})
   </div>
   <hr class="divider" />
-  <ul class="footer__rss">
-    <li>
-      <a
-        class="footer__company-name"
-        href="https://www.google.com.ua/maps/search/406,+Tianbao+Huichuan+Building,+Second+Street,+Binhai+New+Area,+Tianjin,+China/@39.0933407,117.1485425,13.5z?hl=ru&entry=ttu"
-        title="XTD"
-        target="_blank"
-        >TIANJIN XINTONGDA NEW ENERGY AUTOMOBILE CO., LTD</a
-      >
-    </li>
-  </ul>
+  @@include('./Footer/FooterBottom.html', {})
 </footer>
