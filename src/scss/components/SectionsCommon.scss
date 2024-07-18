@@ -2,9 +2,7 @@
   font-size: 42px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: $accent-color-secondary;
-
   font-weight: 700;
-  // text-shadow: 1px 1px 2px black, 0 0 0.6em white, 0 0 0.2em white;
 }
 
 .common-section {
@@ -18,5 +16,10 @@
   }
   .common-section {
     padding-inline: 12px;
+  }
+
+  .common-section {
+    padding-block: 40px;
+    scroll-margin-top: 100px;
   }
 }
