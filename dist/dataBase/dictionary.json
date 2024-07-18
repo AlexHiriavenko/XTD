@@ -20,7 +20,9 @@
       "position_smm_manager": "SMM Manager",
       "position_regional_manager": "Regional Manager",
       "position_chief_regional_manager": "Chief Regional Manager",
-      "position_logistician": "Logistician"
+      "position_logistician": "Logistician",
+      "close_modal": "Close",
+      "telegram_channel": "Our Telegram channel:"
     }
   },
   "ru": {
@@ -44,7 +46,9 @@
       "position_smm_manager": "SMM-менеджер",
       "position_regional_manager": "Региональный Менеджер",
       "position_chief_regional_manager": "Главный региональный менеджер",
-      "position_logistician": "Логист"
+      "position_logistician": "Логист",
+      "close_modal": "Закрыть",
+      "telegram_channel": "Наш Telegram канал:"
     }
   },
   "uk": {
@@ -68,7 +72,9 @@
       "position_smm_manager": "SMM-менеджер",
       "position_regional_manager": "Регіональний Менеджер",
       "position_chief_regional_manager": "Головний регіональний менеджер",
-      "position_logistician": "Логіст"
+      "position_logistician": "Логіст",
+      "close_modal": "Закрити",
+      "telegram_channel": "Наш Telegram канал:"
     }
   },
   "zh": {
@@ -92,7 +98,9 @@
       "position_smm_manager": "SMM经理",
       "position_regional_manager": "区域经理",
       "position_chief_regional_manager": "首席区域经理",
-      "position_logistician": "后勤"
+      "position_logistician": "后勤",
+      "close_modal": "关闭",
+      "telegram_channel": "我们的 Telegram 频道："
     }
   }
 }

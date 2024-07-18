@@ -771,7 +771,46 @@ ul.about-company__text {
   font-weight: 600;
 }
 
-dialog {
+#closeAnimatedModal {
+  padding: 12px;
+  border-radius: 9px;
+  font-weight: 600;
+  background-color: white;
+  color: #008e07;
+}
+
+#modal-container {
+  width: 100vw;
+  height: 100vh;
+  padding-inline: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(64, 63, 61, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#modal-content {
+  max-width: 600px;
+  padding: 24px;
+  background-color: #009b4c;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,35 +818,27 @@ dialog {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 600px;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  background-color: #404040;
-  border: none;
+  gap: 24px;
 }
 
-dialog img {
-  width: 100%;
-  max-width: 700px;
+#modal-content img {
+  max-width: 90%;
+  margin: auto;
 }
 
-#closeAnimatedModal {
-  padding: 12px;
-  border-radius: 9px;
-  font-weight: 600;
-  background-color: #009b4c;
-  color: white;
-}
-
-dialog[open] {
+#modal-container.active {
   opacity: 1;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+  pointer-events: all;
+  z-index: 999;
+}
+
+#modal-content.active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 @media (max-width: 1100px) {
@@ -1156,6 +1187,15 @@ dialog[open] {
   .footer-photo img {
     width: 200px;
     height: auto;
+  }
+
+  #modal-container {
+    padding-inline: 12px;
+  }
+
+  #modal-content img {
+    max-width: 100%;
+    margin: auto;
   }
 }
 

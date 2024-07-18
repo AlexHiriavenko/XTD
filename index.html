@@ -40,10 +40,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap&_v=20240718142938"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap&_v=20240718183019"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240718142938">
-  <link rel="stylesheet" href="./dist/css/styles.min.css?_v=20240718142938" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240718183019">
+  <link rel="stylesheet" href="./dist/css/styles.min.css?_v=20240718183019" />
 </head>
 
 <body>
@@ -200,9 +200,9 @@
   </li>
 </ul>
       <div class="social-chenels">
-  <p class="chenel-title">Наш Telegram канал:</p>
+  <p class="chenel-title" data-i18n="telegram_channel">Our Telegram channel:</p>
   <a
-    href="https://wa.me/8613388086600"
+    href="https://t.me/xtdtianjin"
     class="contacts__link chenel"
     target="_blank">
     <img src="./dist/img/Footer/telegram.svg" alt="WhatsApp" width="40" />
@@ -224,13 +224,15 @@
   </ul>
 </footer>
 
-    <dialog id="animatedModal">
-  <img src="./dist/img/Modal/qr-code.jpg" alt="qr-code">
-  <button id="closeAnimatedModal">Закрыть</button>
-</dialog>
+    <div id="modal-container">
+  <div id="modal-content" onclick="event.stopPropagation();">
+    <img src="./dist/img/Modal/qr-code.jpg" alt="qr-code">
+    <button id="closeAnimatedModal" data-i18n="close_modal">Close</button>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20240718142938"></script>
-  <script type="module" src="./dist/js/app.min.js?_v=20240718142938"></script>
+</div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20240718183019"></script>
+  <script type="module" src="./dist/js/app.min.js?_v=20240718183019"></script>
 </body>
 
 </html>
