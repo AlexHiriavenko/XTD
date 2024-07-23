@@ -56,7 +56,7 @@ const swiper = new Swiper("#craouselContainer", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay: { delay: 3000 },
+  autoplay: { delay: 2200 },
   // autoplay: false,
 });
 window.onresize = queryResizer;
@@ -73,6 +73,6 @@ swiper.el.addEventListener("mouseenter", function () {
   swiper.autoplay.stop();
 });
 
-swiper.el.addEventListener("mouseleave", function () {
-  swiper.autoplay.start();
-});
+// swiper.el.addEventListener("mouseleave", function () {
+//   swiper.autoplay.start();
+// });
