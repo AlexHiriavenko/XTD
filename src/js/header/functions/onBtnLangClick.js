@@ -11,6 +11,7 @@ function onBtnLangClick(event) {
     targetBtn.classList.add("pressed");
 
     changeLanguage(btnLang);
+    localStorage.setItem("userLang", btnLang);
   }
 }
 

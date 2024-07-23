@@ -22,7 +22,9 @@
       "position_chief_regional_manager": "Chief Regional Manager",
       "position_logistician": "Logistician",
       "close_modal": "Close",
-      "telegram_channel": "Our Telegram channel:"
+      "telegram_channel": "Our Telegram channel:",
+      "google-map-link": "Google Maps Location",
+      "tencent-map-link": "Tencent Maps Location"
     }
   },
   "ru": {
@@ -48,7 +50,9 @@
       "position_chief_regional_manager": "Главный региональный менеджер",
       "position_logistician": "Логист",
       "close_modal": "Закрыть",
-      "telegram_channel": "Наш Telegram канал:"
+      "telegram_channel": "Наш Telegram канал:",
+      "google-map-link": "Местоположение на Google Maps",
+      "tencent-map-link": "Местоположение на Tencent Maps"
     }
   },
   "uk": {
@@ -74,7 +78,9 @@
       "position_chief_regional_manager": "Головний регіональний менеджер",
       "position_logistician": "Логіст",
       "close_modal": "Закрити",
-      "telegram_channel": "Наш Telegram канал:"
+      "telegram_channel": "Наш Telegram канал:",
+      "google-map-link": "Місцезнаходження на Google Maps",
+      "tencent-map-link": "Місцезнаходження на Tencent Maps"
     }
   },
   "zh": {
@@ -100,7 +106,9 @@
       "position_chief_regional_manager": "首席区域经理",
       "position_logistician": "后勤",
       "close_modal": "关闭",
-      "telegram_channel": "我们的 Telegram 频道："
+      "telegram_channel": "我们的 Telegram 频道：",
+      "google-map-link": "Google 地图位置",
+      "tencent-map-link": "腾讯地图位置"
     }
   }
 }

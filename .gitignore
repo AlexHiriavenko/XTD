@@ -5,7 +5,7 @@
 /dist
 /index.html
 
-version.json
+# version.json
 /.pnp
 .pnp.js
 # package-lock.json

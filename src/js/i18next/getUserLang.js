@@ -1,5 +1,8 @@
 function getUserLang() {
-  let userLang = window.navigator.language || window.navigator.languages[0];
+  let userLang =
+    localStorage.getItem("userLang") ||
+    window.navigator.language ||
+    window.navigator.languages[0];
 
   switch (true) {
     case userLang?.toLowerCase().includes("ru"):
@@ -7,11 +10,12 @@ function getUserLang() {
     case userLang?.toLowerCase().includes("uk") ||
       userLang?.toLowerCase().includes("ua"):
       return "uk";
-    case userLang?.toLowerCase().includes("zh"):
-      return "zh";
     default:
       return "en";
   }
 }
 
 export default getUserLang;
+
+// case userLang?.toLowerCase().includes("zh"):
+//   return "zh";
