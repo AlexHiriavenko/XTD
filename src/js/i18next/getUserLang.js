@@ -16,6 +16,3 @@ function getUserLang() {
 }
 
 export default getUserLang;
-
-// case userLang?.toLowerCase().includes("zh"):
-//   return "zh";

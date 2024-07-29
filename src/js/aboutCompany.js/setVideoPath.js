@@ -48,7 +48,6 @@ const videoSource = document.querySelector(".video__about-company source");
 const video = document.querySelector(".video__about-company");
 
 function setVideoPath(lang) {
-  console.log(lang);
   if (lang === "ru") {
     video.poster = "./dist/img/About/preview-ukr.jpg";
     videoSource.src = "./dist/videos/preview__rus__optimize.mp4";

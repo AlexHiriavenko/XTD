@@ -8,7 +8,6 @@ import setActiveBtnLang from "../header/functions/setActiveBtnLang.js";
 import { dictionary, setDictionary } from "./dictionary.js";
 import setVideoPath from "../aboutCompany.js/setVideoPath.js";
 
-// Получаем язык пользователя
 const userLang = getUserLang();
 
 async function i18nextInit() {
@@ -17,13 +16,13 @@ async function i18nextInit() {
   // Инициализируем i18next с языком пользователя
   i18next.init(
     {
-      lng: userLang, // Используем язык пользователя как язык по умолчанию
+      lng: userLang,
       resources: dictionary,
     },
     function (err, t) {
       // Функция, выполняемая после инициализации
-      updateContent(userLang); // Передаем язык пользователя для обновления содержимого
-      setActiveBtnLang(userLang); // красим кнопку с нужным языком
+      updateContent(userLang);
+      setActiveBtnLang(userLang);
       setVideoPath(userLang);
     }
   );
